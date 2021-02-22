@@ -212,3 +212,21 @@ option{
       cursor: pointer;
   }
 
+
+@media(max-width:425px){
+  #title{
+    font-size: 1.5rem;
+  }
+  #description{
+    font-size: 0.8rem;
+  }
+  #survey-form{
+    width: 80%;
+  }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+  #survey-form{
+    width: 80%;
+  }
+}
