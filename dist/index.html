@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/styles.css">
+    
     <title>Survey form</title>
 </head>
 <body>
@@ -34,7 +39,7 @@
                
                 <select id="dropdown">
 
-                <option value="default" >Select current role</option>
+                <option value ="" disabled selected>Select current role</option>
                 <option value = "student">Student</option>
                 <option value = "full time job">Full Time Job </option>
                 <option value = "learner">Full Time Learner</option>
@@ -45,17 +50,17 @@
 
                 <p>Would you recommend freeCodeCamp to a friend?</p>
 
-                <input type="radio" name="recommendation" id="definitely" value="definitely">
-                <label for="definitely">Definitely</label><br>
-                <input type="radio" name="recommendation" id="maybe" value="maybe">
-                <label for="maybe">Maybe</label><br>
-                <input type="radio" name="recommendation" id="not-sure" value="not-sure">
-                <label for="not-sure">Not sure</label><br>
+                <label for="definitely"><input type="radio" name="recommendation" id="definitely" value="definitely">Definitely</label>
+                <br>
+                
+                <label for="maybe"><input type="radio" name="recommendation" id="maybe" value="maybe">Maybe</label><br>
+                
+                <label for="not-sure"><input type="radio" name="recommendation" id="not-sure" value="not-sure">Not sure</label><br>
 
                 <p>What is your favorite feature of freeCodeCamp?</p>
 
-                <select id="">
-                    <option value="default">Select an option</option>
+                <select id="dropdown2">
+                    <option value="" disabled selected>Select an option</option>
                     <option value="challenges">Challenges</option>
                     <option value="projects">Projects</option>
                     <option value="community">Community</option>
@@ -64,20 +69,44 @@
 
                 <p>What would you like to see improved? (Check all that apply)</p>
                 
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Front-end Projects</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Back-end Projects</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Data Visualization</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Challenges</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Open Source Community</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Gitter help rooms</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Videos</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">City Meetups</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Wiki</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Forum</label><br>
-                <label for=""><input id="" type="checkbox" value="Front-end Projects">Additional Courses</label><br>
+                <label class="container" >
+                    <input  type="checkbox" checked="checked"><span class="checkmark"></span>Front-end Projects</label>
+                <label class="container" >
+                    <input  type="checkbox" >Back-end Projects
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container" >
+                    <input  type="checkbox" >Data Visualization
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Challenges
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Open Source Community
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Gitter help rooms
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Videos
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >City Meetups
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Wiki
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Forum
+                <span class="checkmark"></span></label>
+                <label class="container" >
+                    <input  type="checkbox" >Additional Courses
+                <span class="checkmark"></span></label>
                 <p>Any comments or suggestions?</p>
                 <textarea id="comments" rows="8">Enter your comments here...</textarea> <br>
                 <button id="submit" type="submit">Submit</button>
+
+               
             </form>
         </div>
     </main>
