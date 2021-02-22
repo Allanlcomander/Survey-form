@@ -1,9 +1,9 @@
 body{
      
-    /* background:rgb(115,115,188);
+    background:rgb(115,115,188);
     z-index: 1;
-    background-blend-mode: multiply; */
-    background-image: url("../images/web-development.jpg");
+    background-blend-mode: multiply; 
+    background-image: url("../images/laptop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -12,17 +12,21 @@ body{
     color: rgb(243,243,243)
    
 
-    /* opacity: 10% blue; */
+    
 }
 
 #title{
     text-align: center;
+    font-weight: 400;
+    padding-top: 40px;
 }
 
 #description{
     text-align: center;
     font-size: 1.5rem;
     font-weight: 100;
+    padding: 10px;
+    line-height: 0;
     font-style: italic;
 
 }
@@ -35,8 +39,9 @@ body{
     margin: auto;
     padding: 40px;
     background-color: rgb(42,42,74);
-    opacity: 85%;
+    opacity: 90%;
     font-size: 1.2rem;
+    border-radius: 5px;
 }
 
 input,select{
@@ -57,18 +62,14 @@ option{
     padding: 10px;
 }
 
-/* input::-ms-check{
-    width: 10px;
-    height: 20px;
-} */
-/* Customize the label (the container) */
+
 .container {
     display: block;
     position: relative;
     padding-left: 35px;
     margin-bottom: 12px;
     cursor: pointer;
-    font-size: 22px;
+    
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -127,5 +128,87 @@ option{
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+  }
+  /* The container */
+.container1 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container1 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .dotmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container1:hover input ~ .dotkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container1 input:checked ~ .dotmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .dotmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container1 input:checked ~ .dotmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container1 .dotmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgb(243,243,243);
+  }
+
+  #comments{
+      padding: 10px;
+      border-radius: 5px;
+  }
+
+  #submit{
+      background:rgb(89,176,101);
+      color:rgb(243,243,243);
+      padding: 12px;
+      margin: 10px 0;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+  }
+
+  #submit:hover{
+      cursor: pointer;
   }
 
